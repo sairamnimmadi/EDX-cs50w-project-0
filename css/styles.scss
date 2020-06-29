@@ -29,11 +29,12 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 body#angular {
   background-image: url(../images/angular.png);
 }
-body#home {
+body#intrest {
   background-image: url(../images/frontend.png);
 }
 body.django {
@@ -42,12 +43,15 @@ body.django {
 body.react {
   background-image: url(../images/react.png);
 }
+body#data {
+  background-image: url(../images/personal-background.jpg);
+}
 $break-point: 700px;
 @media (min-width: $break-point) {
   body#angular {
     background-image: url(../images/angular-background.jpeg);
   }
-  body#home {
+  body#intrest {
     background-image: url(../images/background.png);
   }
   body.django {
@@ -75,13 +79,14 @@ div {
   display: flex;
   flex-wrap: wrap;
 }
+
 .container > div {
   background-color: salmon;
   font-size: 20px;
   font-weight: bolder;
   @extend %font-style;
-  margin: 35px;
-  padding: 20px;
+  margin: 25px;
+  padding: 15px;
   width: 150px;
 }
 div#info {
